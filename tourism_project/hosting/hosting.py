@@ -15,7 +15,7 @@ try:
     print(f"Space '{repo_id}' already exists.")
 except RepositoryNotFoundError:
     print(f"Creating space '{repo_id}'...")
-    create_repo(repo_id=repo_id, repo_type=repo_type, private=False, space_sdk="streamlit")
+    create_repo(repo_id=repo_id, repo_type=repo_type, private=False, space_sdk="docker")
     print(f"Space '{repo_id}' created.")
 
 # Upload all deployment files to the Hugging Face Space
